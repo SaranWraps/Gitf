@@ -28,7 +28,6 @@ fn cli() -> Command{
 }
 
 fn main() {
-    gitf_commands::add("yolo").expect("Error");
     let matches = cli().get_matches();
     match matches.subcommand(){
         Some(("add", sub_matches)) => {
